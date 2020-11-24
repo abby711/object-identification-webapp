@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>HOME</title>
+  </head>
+  <body bgcolor="salmon">
+    <marquee><h1 style="color:white;text-decoration-style: wavy;"> This is the Image Upload Page </h1></marquee>
+
+    <form  action="imageupload/imageprocess" method="POST" enctype="multipart/form-data">
+      <fieldset>
+
+      <legend> <h4>Upload an image to find what it is/ contains</h4></legend>
+      {% csrf_token %}
+      <input id="image" type="file" name="image"><br><br>
+      <input type="submit" name="" value="Proceed">
+    </fieldset>
+  </form>
+  </body>
+</html>

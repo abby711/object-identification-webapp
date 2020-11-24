@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RESULT</title>
+  </head>
+  <body bgcolor="cyan">
+    <center>
+
+
+    <h2>***The image that you passed might be/contain***</h2>
+    <h3>PREDICTIONS</h3>
+    <table border="3">
+      <tr>
+        <th>Object</th>
+        <th>Prediction Rate</th>
+      </tr>
+{% for r,p in res %}
+ <tr>
+        <td>{{r}}</td>
+        <td> {{p}}%</td>
+  </tr>
+{% endfor %}
+</table>
+  </body>
+</html>
